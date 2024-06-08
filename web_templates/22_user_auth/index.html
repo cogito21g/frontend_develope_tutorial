@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p><a href="#" onclick="showSection('signup')">Sign Up</a> | <a href="#" onclick="showSection('forgotPassword')">Forgot Password?</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup" class="hidden">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p><a href="#" onclick="showSection('login')">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div id="forgotPassword" class="hidden">
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="form-group">
+                    <label for="forgotEmail">Email</label>
+                    <input type="email" id="forgotEmail" name="email" required>
+                </div>
+                <button type="submit">Reset Password</button>
+                <p><a href="#" onclick="showSection('login')">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

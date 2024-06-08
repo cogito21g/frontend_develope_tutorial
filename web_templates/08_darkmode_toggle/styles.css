@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* 라이트 모드 배경색 */
+    color: #333; /* 라이트 모드 글자색 */
+    transition: background-color 0.5s ease, color 0.5s ease; /* 배경색과 글자색의 전환 효과 */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #333; /* 다크 모드 배경색 */
+    color: #f4f4f4; /* 다크 모드 글자색 */
+}
+
+body.dark-mode header {
+    background-color: #444; /* 다크 모드에서 헤더의 배경색 */
+}

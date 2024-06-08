@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/150" alt="Image 1" class="thumbnail" data-full="image1.jpg">
+            <img src="https://via.placeholder.com/150" alt="Image 2" class="thumbnail" data-full="image2.jpg">
+            <img src="https://via.placeholder.com/150" alt="Image 3" class="thumbnail" data-full="image3.jpg">
+            <img src="https://via.placeholder.com/150" alt="Image 4" class="thumbnail" data-full="image4.jpg">
+        </div>
+        <div class="lightbox hidden" id="lightbox">
+            <span class="close" id="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-content">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

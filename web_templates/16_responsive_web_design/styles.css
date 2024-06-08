@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        order: -1; /* Sidebar appears above the main content */
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section, aside {
+        padding: 10px;
+    }
+}

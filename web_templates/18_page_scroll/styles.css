@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in {
+    transform: translateY(20px);
+}
+
+.slide-in {
+    transform: translateX(-100%);
+}
+
+.zoom-in {
+    transform: scale(0.8);
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: none;
+}

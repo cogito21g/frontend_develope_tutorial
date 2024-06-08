@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Filter Functionality</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Filter Items</h2>
+        <div class="filters">
+            <input type="text" id="nameFilter" placeholder="Filter by name...">
+            <input type="text" id="categoryFilter" placeholder="Filter by category...">
+            <input type="number" id="minPriceFilter" placeholder="Min price">
+            <input type="number" id="maxPriceFilter" placeholder="Max price">
+            <button id="filterButton">Apply Filters</button>
+        </div>
+        <ul id="itemList">
+            <li data-name="Apple" data-category="Fruit" data-price="1">Apple - Fruit - $1</li>
+            <li data-name="Banana" data-category="Fruit" data-price="2">Banana - Fruit - $2</li>
+            <li data-name="Carrot" data-category="Vegetable" data-price="3">Carrot - Vegetable - $3</li>
+            <li data-name="Doughnut" data-category="Dessert" data-price="4">Doughnut - Dessert - $4</li>
+            <li data-name="Eggplant" data-category="Vegetable" data-price="5">Eggplant - Vegetable - $5</li>
+        </ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

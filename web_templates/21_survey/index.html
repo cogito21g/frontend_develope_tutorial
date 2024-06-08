@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz and Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz and Survey</h1>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p>Question 1: What is the capital of France?</p>
+                    <label><input type="radio" name="q1" value="Paris"> Paris</label>
+                    <label><input type="radio" name="q1" value="London"> London</label>
+                    <label><input type="radio" name="q1" value="Berlin"> Berlin</label>
+                </div>
+                <div class="quiz-question">
+                    <p>Question 2: Which planet is known as the Red Planet?</p>
+                    <label><input type="radio" name="q2" value="Mars"> Mars</label>
+                    <label><input type="radio" name="q2" value="Venus"> Venus</label>
+                    <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+            <div id="quizResult"></div>
+        </section>
+
+        <!-- Survey Section -->
+        <section id="survey">
+            <h2>Survey</h2>
+            <form id="surveyForm">
+                <div class="survey-question">
+                    <p>How satisfied are you with our service?</p>
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied"> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Dissatisfied"> Very Dissatisfied</label>
+                </div>
+                <div class="survey-question">
+                    <p>Any suggestions for improvement?</p>
+                    <textarea name="suggestions" rows="4" cols="50"></textarea>
+                </div>
+                <button type="submit">Submit Survey</button>
+            </form>
+            <div id="surveyResult"></div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

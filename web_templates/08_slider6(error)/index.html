@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Play/Pause</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Slider with Play/Pause</h1>
+    </header>
+    <main>
+        <section id="home">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide active" style="background-color: #ff5733;">Slide 1</div>
+                    <div class="slide" style="background-color: #33c4ff;">Slide 2</div>
+                    <div class="slide" style="background-color: #75ff33;">Slide 3</div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+                <button class="play-pause" onclick="togglePlayPause()">&#10074;&#10074;</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

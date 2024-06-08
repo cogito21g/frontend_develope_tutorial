@@ -3,12 +3,12 @@
 
 
 
-# HTML Coding Convention
+### HTML Coding Convention
 
 
-# CSS Coding Convention
+### CSS Coding Convention
 
 
-# Javascript Coding Convention
+### Javascript Coding Convention
 
 
